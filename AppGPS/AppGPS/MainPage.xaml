@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  
+             xmlns:local="clr-namespace:AppGPS"
+             x:Class="AppGPS.MainPage">
+    
+    <StackLayout VerticalOptions="Center" Padding="40">
+
+
+        <Label Style="{StaticResource LabelTextoVermelho}" FontAttributes="Bold"
+                Text="RASTRE.IO"
+               VerticalOptions="Center"
+               Font="30"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="entryLongitude" Placeholder="Longitude. Ex: -46,6521" StyleClass="Primary" BackgroundColor="#5e5e5e" />
+        <Entry x:Name="entryLatitude" Placeholder="Latitude. Ex: -23,5652" BackgroundColor="#5e5e5e" />
+        <Entry x:Name="entryNome" Placeholder="Nome da localização"  BackgroundColor="#5e5e5e"/>
+
+
+        <StackLayout Padding="20">
+            <Button x:Name="btnclcik" Text="Obter Localização" Clicked="btn_clicked" StyleClass="Primary" BorderRadius="21"/>
+        </StackLayout>
+        
+        
+        
+    </StackLayout>
+    
+        
+    
+</ContentPage>
